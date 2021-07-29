@@ -22,7 +22,7 @@ router.post('/', async (req, res) => {
     let { name, nickname, birthday, image, status, seasons, occupation } = req.body
     
     let characterCreated = await Character.create(
-        {name, nickname, birthday, image, status, seasons, occupation}
+        {name, nickname, birthday, image, status, seasons}
     )
 
     let occupationDb = await Occupation.findAll({

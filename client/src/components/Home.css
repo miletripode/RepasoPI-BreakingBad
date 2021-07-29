@@ -1,0 +1,180 @@
+.home{
+    background-color: #753422;
+    width: 100%;    
+    height: 100vh;         
+    background-size: cover;       
+}
+.nav-link{
+    background-color: #B05B3B;
+    color: #FFEBC9;
+    font-size: 1.25rem;
+    float: left;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.nav-link:hover{
+    background-color: #FFEBC9;
+    color: #B05B3B
+}
+.btnRefresh{
+    background-color: #B05B3B;
+    color: #FFEBC9;
+    float: left;
+    font-size: 30px;
+    border-radius: 10px;
+    margin: 13px;
+    border: none;
+    height: 35px;
+}
+.btnRefresh:hover{
+    background-color: #FFEBC9;
+    color: #B05B3B
+}
+select {
+    width: 100%;
+    min-width: 100px;
+    max-width: 150px;
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    margin: 15px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #B05B3B;
+    color: #FFEBC9;
+}
+select:hover{
+    background-color: #FFEBC9;
+    color: #B05B3B
+}
+
+.loading{
+    width: 70px;
+    height: 70px;
+    border: 10px solid #FFEBC9;
+    border-top: 10px solid #B05B3B;
+    border-radius: 50%;
+    animation-name: girar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+@keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+span {
+    font-size: 40px;
+}
+
+.containerHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 14px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #19a2c1;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .switch-checkbox {
+    padding: 10px;
+  }
+
+  .dark-mode {
+    background-color: #753422;;
+    width: 100%;    
+    height: 100vh;         
+    background-size: cover;     
+    transition: background-color 0.25s ease-in-out;
+  }
+  
+  .light-mode {
+    background-color: #D79771;
+    color: #333;
+    width: 100%;    
+    height: 100vh;
+    transition: background-color 0.25s ease-in-out;
+  }
